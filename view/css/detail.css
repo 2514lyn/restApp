@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+* html,
+* body {
+  width: 100%;
+  height: 100%;
+}
+* html #detail,
+* body #detail {
+  width: 100%;
+  height: 100%;
+  background-color: #F7F7F7;
+}
+* html #detail .detail-head,
+* body #detail .detail-head {
+  position: relative;
+  width: 100%;
+  height: 1rem;
+  color: #000000;
+  font-size: 0.4rem;
+  text-align: center;
+  padding-top: 0.25rem;
+  background-color: #FFEEAA;
+}
+* html #detail .detail-head .back-to-index,
+* body #detail .detail-head .back-to-index {
+  position: absolute;
+  left: 0.32rem;
+  top: 0.4rem;
+  display: inline-block;
+  width: 0.38rem;
+  height: 0.38rem;
+  background: url("../img/ico_left_arrow.png") 100% 100% / cover no-repeat;
+}
+* html #detail #detail-content,
+* body #detail #detail-content {
+  width: 100%;
+  height: calc(99%);
+}
+* html #detail #detail-content #seilorInfo,
+* body #detail #detail-content #seilorInfo {
+  width: 100%;
+  height: 1.44rem;
+  line-height: 20px;
+  color: #101010;
+  font-size: 0.28rem;
+  display: flex;
+  border: 1px solid #bbbbbb;
+}
+
+
+* html #detail #detail-content #seilorInfo .seilorImg,
+* body #detail #detail-content #seilorInfo .seilorImg {
+  width: 0.96rem;
+  height: 1.1rem;
+}
+* html #detail #detail-content #seilorInfo .seilorImg img,
+* body #detail #detail-content #seilorInfo .seilorImg img {
+  width: 100%;
+  height: 100%;
+  padding: 0.08rem;
+}
+* html #detail #detail-content #seilorInfo .seilor,
+* body #detail #detail-content #seilorInfo .seilor {
+  width: 2rem;
+  height: 0.56rem;
+  color: #101010;
+  font-size: 0.3rem;
+  margin: 0.2rem;
+}
+* html #detail #detail-content #seilorInfo .date,
+* body #detail #detail-content #seilorInfo .date {
+  width: 5rem;
+  height: 0.4rem;
+  display: inline-block;
+  color: #101010;
+  font-size: 0.25rem;
+  margin-left: -1.1rem;
+  margin-top: 0.6rem;
+}
+
+* html #detail #detail-content #seilorInfo2,
+* body #detail #detail-content #seilorInfo2 {
+  width: 100%;
+  height: 4.5rem;
+  line-height: 20px;
+  color: #101010;
+  font-size: 0.28rem;
+  display: flex;
+  border: 1px solid #bbbbbb;
+}
+* html #detail #detail-content #seilorInfo2 .seilorImg,
+* body #detail #detail-content #seilorInfo2 .seilorImg {
+  width: 0.96rem;
+  height: 1.1rem;
+}
+* html #detail #detail-content #seilorInfo2 .seilorImg img,
+* body #detail #detail-content #seilorInfo2 .seilorImg img {
+  width: 1rem;
+  height: 1rem;
+  padding: 0.08rem;
+	margin-left: -2rem;
+	margin-top: 0.86rem;
+}
+* html #detail #detail-content #seilorInfo2 .seilor,
+* body #detail #detail-content #seilorInfo2 .seilor {
+  width: 2rem;
+  height: 0.56rem;
+  color: #101010;
+  font-size: 0.3rem;
+  margin: 0.2rem;
+}
+* html #detail #detail-content #seilorInfo2 .seilor2,
+* body #detail #detail-content #seilorInfo2 .seilor2 {
+  width: 2rem;
+  height: 0.56rem;
+  color: #101010;
+  font-size: 0.3rem;
+  margin-left: -1.6rem;
+  margin-top: 0.86rem;
+}
+* html #detail #detail-content #seilorInfo2 .date,
+* body #detail #detail-content #seilorInfo2 .date {
+  width: 5rem;
+  height: 0.4rem;
+  display: inline-block;
+  color: #101010;
+  font-size: 0.25rem;
+  margin-left: -2rem;
+  margin-top: 1.4rem;
+}
+
+* html #detail #detail-content #box-slider,
+* body #detail #detail-content #box-slider {
+  width: 100%;
+  height: 5rem;
+  margin-top: 0.2rem;
+  border: 1px solid #bbbbbb;
+}
+
+* html #detail #detail-content #box-slider img,
+* body #detail #detail-content #box-slider img{
+  width: 100%;
+  height: 100%;
+  border: 1px solid #bbbbbb;
+}
+
+* html #detail #detail-content #info,
+* body #detail #detail-content #info {
+  width: 100%;
+  margin-top: 0.2rem;
+  border: 1px solid #bbbbbb;
+}
+* html #detail #detail-content #info .bookname,
+* body #detail #detail-content #info .bookname {
+  display: block;
+  margin-left: 0.2rem;
+  margin-top: 0.2rem;
+  width: 4rem;
+  height: 0.52rem;
+  color: #101010;
+  font-size: 0.36rem;
+  float: left;
+}
+* html #detail #detail-content #info .note,
+* body #detail #detail-content #info .note {
+  display: block;
+  width: 2rem;
+  height: 0.4rem;
+  font-size: 0.24rem;
+  margin-left: 5.7rem;
+  margin-top: 0.3rem;
+}
+* html #detail #detail-content #info .bookDetail,
+* body #detail #detail-content #info .bookDetail {
+  width: 4.08rem;
+  height: 0.9rem;
+  font-size: 0.28rem;
+  margin-left: 0.3rem;
+  margin-top: 0.5rem;
+}
+* html #detail #detail-content #info .bookType,
+* body #detail #detail-content #info .bookType {
+  display: block;
+  float: left;
+  width: 0.84rem;
+  height: 0.4rem;
+  margin-left: 5.7rem;
+  margin-top: -1rem;
+  color: #101010;
+  font-size: 0.28rem;
+}
+* html #detail #detail-content #info .price,
+* body #detail #detail-content #info .price {
+  width: 1.64rem;
+  height: 0.8rem;
+  display: block;
+  color: #e51c23;
+  font-size: 0.56rem;
+  margin-left: 0.5rem;
+  margin-top: 0.4rem;
+}
+* html #detail #detail-content #info .oriprice,
+* body #detail #detail-content #info .oriprice {
+  display: block;
+  float: left;
+  height: 0.46rem;
+  color: #101010;
+  font-size: 0.26rem;
+  margin-left: 2.8rem;
+  margin-top: -0.5rem;
+  text-decoration: line-through;
+}
+* html #detail #detail-content #like,
+* body #detail #detail-content #like {
+  margin-top: 0.2rem;
+  width: 100%;
+  height: 4.5rem;
+  text-align: center;
+  border: 1px solid #bbbbbb;
+}
+* html #detail #detail-content #like .aLike,
+* body #detail #detail-content #like .aLike {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 0.32rem;
+  color: #000;
+}
+* html #detail #detail-content #like .aLike img,
+* body #detail #detail-content #like .aLike img {
+  width: 0.48rem;
+  height: 0.48rem;
+  margin-right: 0.1rem;
+}

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>restinfo</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index.css">
+      <link rel="stylesheet" href="css/restinfo.css">
+</head>
+<body>
+<div class="index-wrapper">
+    <!--    头部-->
+    <div class="header">甄好吃麻辣烫
+        <a class="iconfontPer" href="../php/personal.php"></a>
+    </div>
+    <!--    内容-->
+    <div class="content">
+        <!--        轮播图  商家海报-->
+        <div id="slider"></div>
+        <!--        点菜+商家-->
+        <div class="bar">
+            <ul class="bar-list">
+                <li><a href="index.html">点菜</a></li>
+                <li><a href="restinfo.html">商家</a></li>
+            </ul>
+        </div>
+      
+        <div class="Info">
+            <div>
+                <img src="./img/phone.png" alt="">
+                <span>18181761706</span>	
+                 <img src="./img/phone2.png" alt="" class="phone2">
+            </div>
+           <div>
+                <img src="./img/position.png" alt="">
+                <span>北京市海淀区中关村南大街27号 理工楼902</span>	
+            </div>
+            <div>
+                <img src="./img/time.png" alt="">
+                <span>用餐时间：09:00-22:00</span>	
+            </div>
+             <div>
+                <img src="./img/waimai.png" alt="">
+                <span>暂不提供外送服务</span>	
+            </div>
+            
+           
+    </div>
+   
+</div>
+<script src="./js/jquery-3.3.1.js"></script>
+<script src="./js/zepto.min.js"></script>
+<script src="./js/rem.js"></script>
+<script src="./js/swiper.js"></script>
+<script src="./js/data.js"></script>
+<script src="js/event.js"></script>
+<script>
+    $('#slider').swiper({
+        imgList: ['./img/p1.jpg','./img/p2.jpg','./img/p3.jpg'],
+        animateType: 'animate',
+        changeBtn: true,
+        showPointBtn: true,
+        isAuto: true,
+        imgHeight: '3rem'
+    })
+</script>
+</body>
+</html>

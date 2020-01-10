@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>order</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/order.css">
+</head>
+<body>
+<div class="order-wrapper">
+    <!--    头部-->
+    <div class="head">
+        <a href="./index.html" class="back-to-personal"></a>
+        提交订单
+    </div>
+    <!--    内容区域-->
+    <div class="detail">
+        <div class="customer">
+            <div class="customerInfo">
+                <label for="number">桌号：</label>
+                <span id="number">A12</span>
+            </div>
+            <div class="time">
+                <label for="t">预计上菜时间：</label>
+                <span id="t">12:10</span>
+            </div>
+        </div>
+        <div class="payWay">
+            <span class="p p1">支付方式</span>
+            <span class="p p2">在线支付 ></span>
+        </div>
+        <div class="Info">
+            <div>
+                <img src="./img/shopImg.PNG" alt="">
+                <span>甄好吃麻辣烫（海淀区店）</span>
+            </div>
+            <div class="second">
+                <span class="s1">甄好吃麻辣烫</span>
+                <span class="s2">总计：￥0</span>
+            </div>
+            <div>
+                <label for="count">餐具数量</label>
+                <input type="number" id="count" placeholder="输入数字">
+            </div>
+        </div>
+    </div>
+    <!--    底部-->
+    <div class="footer">
+        <p class="tips">甄好吃餐厅预祝您用餐愉快^-^</p>
+        <div class="payMoney">
+            <div class="money">
+                待支付
+                <span class="waitPay">￥0</span>
+            </div>
+            <div class="submitOrder">
+                提交订单
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--支付订单-->
+<div class="payWindow">
+    <div class="mask">
+        <div class="payBox">
+            <p id="payTips">请输入支付密码</p>
+            <span id="payMoney">￥0</span>
+            <div class="inputPass">
+                <input type="number" maxlength="1">
+                <input type="number" maxlength="1">
+                <input type="number" maxlength="1">
+                <input type="number" maxlength="1">
+                <input type="number" maxlength="1">
+                <input type="number" maxlength="1">
+            </div>
+        </div>
+    </div>
+</div>
+<!--支付成功-->
+<div class="paySuccess">
+        <div class="successMask"></div>
+        <div class="successTips">
+            <div class="img">
+                <img src="./img/success.png" alt="">
+            </div>
+            <p>支付成功！</p>
+            <a href="index.html" id="sure">确定</a>
+        </div>
+</div>
+<script src="./js/jquery-3.3.1.js"></script>
+<script src="./js/zepto.min.js"></script>
+<script src="./js/rem.js"></script>
+<script src="./js/data.js"></script>
+<script src="./js/event.js"></script>
+</body>
+</html>

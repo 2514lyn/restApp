@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+* html,
+* body {
+  width: 100%;
+  height: 100%;
+}
+.head {
+    position: relative;
+    width: 100%;
+    height: 1rem;
+    color: #000000;
+    font-size: 0.4rem;
+    text-align: center;
+    padding-top: 0.25rem;
+    background-color: #ffeeaa;
+}
+.head .back-to-personal {
+    position: absolute;
+    left: 0.32rem;
+    top: 0.3rem;
+    display: inline-block;
+    width: 0.58rem;
+    height: 0.58rem;
+    background: url('../img/4.png') 100% 100% / cover no-repeat;
+}
+
+* html .pers .content-list,
+* body .pers .content-list {
+  width: 100%;
+}
+* html .pers .content-list .head-photo,
+* body .pers .content-list .head-photo {
+  width: 100%;
+  height: 2.8rem;
+  display: flex;
+  background-color: #FFEEAA;
+  border-bottom: 1px solid #bbbbbb;
+}
+* html .pers .content-list .head-photo .photo,
+* body .pers .content-list .head-photo .photo {
+  width: 34%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+* html .pers .content-list .head-photo .photo img,
+* body .pers .content-list .head-photo .photo img {
+  width: 2.06rem;
+  height: 2.06rem;
+  background: green;
+  border-radius: 50%;
+}
+* html .pers .content-list .head-photo .per-data,
+* body .pers .content-list .head-photo .per-data {
+  width: 66%;
+}
+* html .pers .content-list .head-photo .per-data .nickname,
+* body .pers .content-list .head-photo .per-data .nickname {
+  width: 100%;
+  font-size: 0.56rem;
+  color: #101010;
+  font-weight: bold;
+  margin-top: 0.54rem;
+}
+* html .pers .content-list .head-photo .per-data .signature,
+* body .pers .content-list .head-photo .per-data .signature {
+  width: 100%;
+  font-size: 0.32rem;
+  color: #999999;
+  font-weight: normal;
+  margin-top: 0.32rem;
+}
+* html .pers .content-list .list,
+* body .pers .content-list .list {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+* html .pers .content-list .list ul,
+* body .pers .content-list .list ul {
+  width: 100%;
+}
+* html .pers .content-list .list ul li,
+* body .pers .content-list .list ul li {
+  width: 100%;
+  height: 1.2rem;
+  border-bottom: 1px solid #bbbbbb;
+  display: flex;
+  justify-content: space-between;
+}
+ .item {
+  width: 100%;
+  display: flex;
+}
+ .list ul li .li-one {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ .list ul li .li-one img {
+  width: 0.48rem;
+  height: 0.48rem;
+}
+ .list ul li .li-two {
+  width: 60%;
+  height: 100%;
+  line-height: 1.2rem;
+  font-weight: bold;
+  font-size: 0.36rem;
+  color: #101010;
+}
+ .li-three {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.li-three img {
+  width: 0.48rem;
+  height: 0.48rem;
+}
+.item.pub-border{
+  background-color: #fff;
+  border: none;
+  outline: none;
+ }
+.item.pub-border .li-one img{
+  /*width: 30%;*/
+  width: 0.73rem;
+  height: 0.73rem;
+  margin-top: 0.2rem;
+}
+.item.pub-border .li-two{
+  text-align: left;
+}
+.item.pub-border .li-three img{
+  margin-top: 0.4rem;
+}

@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+* html,
+* body {
+  width: 100%;
+  height: 100%;
+}
+* html .update-info,
+* body .update-info {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+* html .update-info .update-head,
+* body .update-info .update-head {
+  position: relative;
+  width: 100%;
+  height: 1rem;
+  color: #000000;
+  font-size: 0.4rem;
+  text-align: center;
+  padding-top: 0.25rem;
+  background-color: #ffeeaa;
+}
+* html .update-info .update-head .back-to-personal,
+* body .update-info .update-head .back-to-personal {
+  position: absolute;
+  left: 0.32rem;
+  top: 0.3rem;
+  display: inline-block;
+  width: 0.58rem;
+  height: 0.58rem;
+  background: url('../img/4.png') 100% 100% / cover no-repeat;
+}
+* html .update-info .update-content,
+* body .update-info .update-content {
+  width: 100%;
+}
+* html .update-info .update-content .update-photo,
+* body .update-info .update-content .update-photo {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+* html .update-info .update-content .update-photo .box-photo,
+* body .update-info .update-content .update-photo .box-photo {
+  width: 2.36rem;
+  height: 2.42rem;
+  margin-left: 2.6rem;
+}
+* html .update-info .update-content .update-photo .box-photo img,
+* body .update-info .update-content .update-photo .box-photo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+* html .update-info .update-content .update-photo .pic-tips,
+* body .update-info .update-content .update-photo .pic-tips {
+  width: 100%;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  text-align: center;
+  color: #cac3c3;
+  font-size: 0.28rem;
+  margin-top: 0.15rem;
+}
+* html .update-info .update-content .info-form,
+* body .update-info .update-content .info-form {
+  width: 100%;
+}
+* html .update-info .update-content .info-form .box-input,
+* body .update-info .update-content .info-form .box-input {
+  width: 6rem;
+  margin-left: 0.7rem;
+}
+* html .update-info .update-content .info-form .box-input label,
+* body .update-info .update-content .info-form .box-input label {
+  width: 1.8rem;
+  height: 0.52rem;
+  color: #101010;
+  font-size: 0.36rem;
+  text-align: left;
+}
+* html .update-info .update-content .info-form .box-input input,
+* body .update-info .update-content .info-form .box-input input,
+* html .update-info .update-content .info-form .box-input #sex,
+* body .update-info .update-content .info-form .box-input #sex {
+  width: 3.6rem;
+  height: 0.6rem;
+  margin-top: 0.2rem;
+  margin-left: -0.2rem;
+  outline: none;
+}
+* html .update-info .update-content .info-form #submit-info,
+* body .update-info .update-content .info-form #submit-info {
+  margin-left: 1.26rem;
+  margin-top: 0.6rem;
+  width: 5.28rem;
+  height: 0.88rem;
+  line-height: 0.4rem;
+  border-radius: 5px;
+  background-color: #FFEEAA;
+  color: #000000;
+  font-size: 0.28rem;
+  text-align: center;
+  border: 1px solid rgba(5, 5, 5, 0.08);
+}
+* html .update-info .tips-box,
+* body .update-info .tips-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+}
+* html .update-info .tips-box .mask,
+* body .update-info .tips-box .mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+* html .update-info .tips-box .tips,
+* body .update-info .tips-box .tips {
+  width: 5rem;
+  height: 3.3rem;
+  border: 1px solid #ddd;
+  margin: 3.5rem auto;
+  background-color: #fff;
+}
+* html .update-info .tips-box .tips .img,
+* body .update-info .tips-box .tips .img {
+  width: 1rem;
+  height: 1rem;
+  margin: 0 auto;
+}
+* html .update-info .tips-box .tips .img img,
+* body .update-info .tips-box .tips .img img {
+  width: 100%;
+  height: 100%;
+}
+* html .update-info .tips-box .tips p,
+* body .update-info .tips-box .tips p {
+  font-size: 0.38rem;
+  text-align: center;
+  margin-top: 0.4rem;
+  margin-left: 0.2rem;
+}
+* html .update-info .tips-box .tips a,
+* body .update-info .tips-box .tips a {
+  display: block;
+  width: 2rem;
+  height: 0.8rem;
+  text-align: center;
+  font-size: 0.46rem;
+  background-color: #FFEEAA;
+  color: #000;
+  margin: 0.3rem auto;
+  border-radius: 10px;
+}

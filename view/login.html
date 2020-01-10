@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+<div class="login-wrapper">
+    <div class="logo"><img src="./img/login.PNG" alt=""></div>
+    <form action="../php/login.php" method="post" id="form">
+        <!--
+          test.php为接ロ,辻htm1跳转到login.php文件.post:传输方式为post-->
+        <div class="username">
+            <label for="username">用户名:</label><input type="text" id="username" name=
+                "name" placeholder="请输入用户名">
+        </div>
+        <div class="pass">
+            <!--uname作用是携帯input輸入框中的数据佶入php文件-->
+            <label for="pass">密&nbsp&nbsp码:</label><input type="password" id="pass" name= "password" placeholder="请输入密码">
+        </div>
+        <input type="submit" id="btn" value="登录">
+    </form>
+</div>
+<script src="js/zepto.min.js"></script>
+<script src="js/rem.js"></script>
+<script>
+    $('#btn').click(function () {
+        window.location.href = "index.html";
+    })
+</script>
+</body>
+</html>

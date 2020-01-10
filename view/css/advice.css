@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+* html,
+* body {
+  width: 100%;
+  height: 100%;
+}
+* html .advice,
+* body .advice {
+  width: 100%;
+  height: 100%;
+  background-color: #F7F7F7;
+}
+* html .advice .advice-head,
+* body .advice .advice-head {
+  position: relative;
+  width: 100%;
+  height: 1rem;
+  color: #000000;
+  font-size: 0.4rem;
+  text-align: center;
+  padding-top: 0.25rem;
+  background-color: #FFEEAA;
+}
+* html .advice .advice-head .back-to-personal,
+* body .advice .advice-head .back-to-personal {
+  position: absolute;
+  left: 0.32rem;
+  top: 0.3rem;
+  display: inline-block;
+  width: 0.58rem;
+  height: 0.58rem;
+  background: url(../img/4.png) 100% 100% / cover no-repeat;
+}
+* html .advice .advice-content,
+* body .advice .advice-content {
+  width: 100%;
+}
+* html .advice .advice-content .title,
+* body .advice .advice-content .title {
+  color: red;
+  font-size: 0.28rem;
+  margin-bottom: 0.1rem;
+}
+* html .advice .advice-content .question,
+* body .advice .advice-content .question {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+* html .advice .advice-content .question #textarea,
+* body .advice .advice-content .question #textarea {
+  width: 7.16rem;
+  height: 2rem;
+  display: block;
+  line-height: 0.4rem;
+  margin: 0rem auto;
+  padding: 0.1rem;
+  border: 1px solid #bbbbbb;
+  outline: none;
+}
+* html .advice .advice-content .question textarea::-webkit-input-placeholder,
+* body .advice .advice-content .question textarea::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #9c9c9c;
+}
+* html .advice .advice-content .question textarea:-moz-placeholder,
+* body .advice .advice-content .question textarea:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #9c9c9c;
+}
+* html .advice .advice-content .question textarea::-moz-placeholder,
+* body .advice .advice-content .question textarea::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #9c9c9c;
+}
+* html .advice .advice-content .question textarea::-ms-input-placeholder,
+* body .advice .advice-content .question textarea::-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #9c9c9c;
+}
+* html .advice .advice-content .adv-pic,
+* body .advice .advice-content .adv-pic {
+  width: 100%;
+  margin-top: 1.1rem;
+}
+* html .advice .advice-content .adv-pic .pic-area,
+* body .advice .advice-content .adv-pic .pic-area {
+  width: 7.16rem;
+  height: 2rem;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #bbbbbb;
+}
+* html .advice .advice-content .adv-pic .pic-area .pic-file,
+* body .advice .advice-content .adv-pic .pic-area .pic-file {
+  width: 1.3rem;
+  height: 1.3rem;
+  margin-top: 0.4rem;
+  margin-left: 0.5rem;
+  background: url("../img/pic-file.png") 100% 100% / cover no-repeat;
+}
+* html .advice .advice-content .adv-pic .pic-area #file,
+* body .advice .advice-content .adv-pic .pic-area #file {
+  opacity: 0;
+}
+* html .advice .advice-content #submit-adv,
+* body .advice .advice-content #submit-adv {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 0.9rem;
+  line-height: 0.4rem;
+  font-size: 0.38rem;
+  text-align: center;
+  color: #000000;
+  background-color: #FFEEAA;
+  border: 1px solid #bbbbbb;
+}
+* html .advice .tips-box,
+* body .advice .tips-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+}
+* html .advice .tips-box .mask,
+* body .advice .tips-box .mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+* html .advice .tips-box .tips,
+* body .advice .tips-box .tips {
+  width: 5rem;
+  height: 3.3rem;
+  border: 1px solid #ddd;
+  margin: 3.5rem auto;
+  z-index:999;
+  background-color: #fff;
+}
+* html .advice .tips-box .tips .img,
+* body .advice .tips-box .tips .img {
+  width: 1rem;
+  height: 1rem;
+  margin: 0 auto;
+}
+* html .advice .tips-box .tips .img img,
+* body .advice .tips-box .tips .img img {
+  width: 100%;
+  height: 100%;
+}
+* html .advice .tips-box .tips p,
+* body .advice .tips-box .tips p {
+  font-size: 0.38rem;
+  text-align: center;
+  margin-top: 0.4rem;
+  margin-left: 0.2rem;
+}
+* html .advice .tips-box .tips a,
+* body .advice .tips-box .tips a {
+  display: block;
+  width: 2rem;
+  height: 0.8rem;
+  text-align: center;
+  font-size: 0.46rem;
+  background-color: #FFEEAA;
+  color: #000;
+  margin: 0.3rem auto;
+  border-radius: 10px;
+}
+/*# sourceMappingURL=advice.css.map */

@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  width: 100vw;
+  height: 100vh;
+}
+ .login-wrapper{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: url("../img/login1.jpg") 100% 100% /cover no-repeat;
+}
+ .logo{
+   /*margin-top: 2rem;*/
+   width: 100%;
+   height: 5rem;
+ }
+ .logo img{
+   width: 100%;
+   height: 100%;
+ }
+
+
+#form {
+  position: absolute;
+  top: 5rem;
+  left: 0;
+  width: 100%;
+  height: 7rem;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.username,.pass{
+  width: 8rem;
+  height: 2rem;
+}
+label{
+  font-size: 0.56rem;
+}
+input{
+  font-size: 0.36rem;
+  width: 5rem;
+  height: 1rem;
+  margin-left: 0.2rem;
+}
+#pass{
+  width: 5.01rem;
+  margin-left: 0.4rem;
+}
+#btn{
+  width: 4rem;
+  height: 1rem;
+  border-radius: 20px;
+  background-color: #abcdef;
+}
+
+
+

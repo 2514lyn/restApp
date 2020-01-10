@@ -1,0 +1,322 @@
+@font-face {
+    font-family: 'iconfont';  /* project id 1555170 */
+    src: url('//at.alicdn.com/t/font_1555170_k222v6bf21.eot');
+    src: url('//at.alicdn.com/t/font_1555170_k222v6bf21.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_1555170_k222v6bf21.woff2') format('woff2'),
+    url('//at.alicdn.com/t/font_1555170_k222v6bf21.woff') format('woff'),
+    url('//at.alicdn.com/t/font_1555170_k222v6bf21.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_1555170_k222v6bf21.svg#iconfont') format('svg');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 100vw;
+    height: 100vh;
+}
+.index-wrapper{
+    width: 100vw;
+    height: 100vh;
+}
+
+.header{
+    position: relative;
+    width: 100%;
+    height: 0.7rem;
+    font-size: 0.46rem;
+    color: #000;
+    background-color: #FFEEAA;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header .iconfontPer{
+    position: absolute;
+    left: 6.7rem;
+    width: 0.46rem;
+    height: 0.46rem;
+    display: block;
+    border: none;
+    background: url("../img/person.png") 100% 100% /cover no-repeat;
+}
+.content{
+    width: 100%;
+    height: calc(100vh - 0.5rem);
+    overflow: scroll;
+}
+#slider{
+    width: 100%;
+    height: 3rem;
+}
+.bar{
+    width: 100%;
+    height: 0.8rem;
+    font-size: 0.56rem;
+}
+.bar-list{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.bar-list li{
+    flex: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bar-list li a{
+    display: block;
+    width: 2rem;
+    height: 100%;
+    font-size: 0.36rem;
+    color: #000;
+    border-bottom: 5px solid #FFEEAA;
+    margin-left: 0.7rem;
+    padding-top: 0.15rem;
+    box-sizing: border-box;
+}
+.meal{
+    width: 100%;
+    height: calc(100% - 3.8rem);
+}
+.leftBar{
+    float: left;
+    width: 1.64rem;
+}
+.leftBar-list{
+    width: 100%;
+    background-color: #EDEFF0;
+    display: flex;
+    flex-direction: column;
+}
+.leftBar-list li{
+    width: 100%;
+    flex: 1;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+.leftBar-list li a{
+    width: 1.7rem;
+    height: 0.85rem;
+    font-size: 0.28rem;
+    color: #000;
+    box-sizing: border-box;
+    padding-top: 0.27rem;
+}
+.rightItem{
+    float: left;
+    width: calc(100% - 1.64rem);
+    overflow: scroll;
+}
+.right-list{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0.2rem;
+}
+.right-list li{
+    width: 100%;
+    height: 2.5rem;
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+}
+/*.right-list li a{*/
+/*    display: block;*/
+/*    width: 100%;*/
+/*    height: 2.5rem;*/
+/*    box-sizing: border-box;*/
+/*}*/
+.right-list li  .mealImg{
+    /*float: left;*/
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mealImg img{
+    width: 1.2rem;
+    height: 1.2rem;
+}
+.mealInfo{
+    /*float: right;*/
+    width: 70%;
+    color: #000;
+    margin-top: 0.2rem;
+}
+.mealInfo .name{
+    font-size: 0.36rem;
+    margin-left: 0.2rem;
+    margin-top: 0.2rem;
+}
+.mealInfo .price{
+    font-size: 0.32rem;
+    color: red;
+    margin-left: 0.2rem;
+    margin-top: 0.2rem;
+    display: block;
+}
+.mealInfo .discount{
+    font-size: 0.28rem;
+    width: 2.3rem;
+    text-align: center;
+    margin-top: 0.3rem;
+    color: red;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+
+.mealInfo .addToCar {
+    display: block;
+    width: 0.56rem;
+    height: 0.56rem;
+    margin-left: 3.2rem;
+    margin-top: -1.4rem;
+    cursor: pointer;
+    background: url("../img/add.png") center center /cover no-repeat;
+    /*background-position: center;*/
+}
+.footer{
+    position: fixed;
+
+    bottom: 0;
+    width: 100%;
+    height: 1rem;
+    background-color: rgba(255, 255, 255, 1);
+    border-top: 1px solid #ddd;
+    text-align: center;
+    z-index: 999;
+}
+.car{
+    position: absolute;
+    top: -0.6rem;
+    left: 0.4rem;
+    width: 0.96rem;
+    height: 0.9rem;
+    background-color: rgba(255, 235, 18, 1);
+    text-align: center;
+    border-radius: 50%;
+}
+.dot{
+    background-color: red;
+    color: #fff;
+    font-size: 0.27rem;
+    border-radius: 40%;
+    position: absolute;
+    top: -0.12rem;
+    left: 0.6rem;
+    width: 0.4rem;
+    height: 0.4rem;
+    text-align: center;
+    padding-top: 0.05rem;
+    display: block;
+}
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 32px;
+    position: absolute;
+    top: 0.1rem;
+    left: 0.2rem;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+.foot-text{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.sumMoney{
+    flex: 6;
+    background-color: #fff;
+    text-align: center;
+    color: red;
+    font-size: 0.46rem;
+    line-height: 1rem;
+}
+.goToMoney{
+    flex: 4;
+    color: #000;
+    font-size: 0.38rem;
+    background-color: #F5E000;
+    line-height: 1rem;
+}
+/*点击购物车，出现菜单*/
+.carList{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+/*遮罩层*/
+.mask{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(1, 1, 1, 0.8);
+    opacity: 0.9;
+}
+.caritem{
+    position: absolute;
+    /*left: 0;*/
+    bottom: 1.5rem;
+    width: 100%;
+    /*height: 5rem;*/
+    z-index:999;
+    background-color: #fff;
+}
+.carMealList{
+    width: 100%;
+    height: 100%;
+}
+.carMealList li{
+    width: 100%;
+    height: 1rem;
+    border-top: 1px solid #ccc;
+}
+.carMealList li .container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 0.2rem;
+}
+.container p{
+    font-size: 0.36rem;
+    /*text-align: left;*/
+}
+.container .mealName{
+    flex: 5;
+    text-align: left;
+}
+.container .allprice{
+    flex: 1;
+    text-align: center;
+}
+.container .optNum{
+    flex: 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 0.3rem;
+}
+.container .optNum button{
+    width: 0.55rem;
+    height: 0.55rem;
+}

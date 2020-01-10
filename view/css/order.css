@@ -1,0 +1,313 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 100vw;
+    height: 100vh;
+}
+.order-wrapper{
+    width: 100vw;
+    height: 100vh;
+}
+.head {
+    position: relative;
+    width: 100%;
+    height: 1rem;
+    color: #000000;
+    font-size: 0.4rem;
+    text-align: center;
+    padding-top: 0.25rem;
+    background-color: #ffeeaa;
+}
+.head .back-to-personal {
+    position: absolute;
+    left: 0.32rem;
+    top: 0.3rem;
+    display: inline-block;
+    width: 0.58rem;
+    height: 0.58rem;
+    background: url('../img/4.png') 100% 100% / cover no-repeat;
+}
+.detail{
+    width: 100%;
+    background-color: #f0f0f2;
+    height: calc(100% - 1.9rem);
+}
+.customer{
+    width: 100%;
+    height: 2rem;
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(16, 16, 16, 1);
+    font-size: 0.28rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.customerInfo{
+    flex: 7;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 0.3rem;
+}
+.customerInfo label{
+    font-size: 0.56rem;
+    font-weight: bold;
+}
+.customerInfo #number{
+    font-size: 0.56rem;
+}
+.time{
+    flex: 3;
+    border-top: 1px solid #ccc;
+    text-align: left;
+    box-sizing: border-box;
+    background-color: #fff;
+    /*padding: 0.1rem;*/
+}
+.time label{
+    font-size: 0.26rem;
+    font-weight: bold;
+}
+.time #t{
+    font-size: 0.28rem;
+    color: rgba(3, 169, 244, 1);
+    font-weight: bold;
+}
+.payWay{
+    width: 100%;
+    height: 0.7rem;
+    margin-top: 0.7rem;
+    display: flex;
+    background-color: #fff;
+    align-items: center;
+}
+.payWay .p{
+    font-size: 0.28rem;
+    color: #555555;
+    box-sizing: border-box;
+}
+.payWay .p1{
+    flex: 7;
+    padding-left: 0.2rem;
+}
+.payWay .p2{
+    flex: 3;
+    text-align: right;
+    padding-right: 0.1rem;
+}
+.Info{
+    width: 100%;
+    height: 2.72rem;
+    margin-top: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    background-color:#fff;
+}
+.Info span,label{
+    font-size: 0.24rem;
+    color: #9c9c9c;
+    text-align: center;
+    line-height: 0.9rem;
+}
+.Info div{
+    flex: 1;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    background-color:#fff;
+}
+.Info div img{
+    width: 0.9rem;
+    height: 0.9rem;
+}
+.Info .second{
+    display: flex;
+}
+.Info .second .s1{
+    flex: 8;
+    text-align: left;
+    padding-left: 0.1rem;
+}
+.Info .second .s2{
+    flex: 3;
+    color: red;
+}
+.Info .third{
+    display: flex;
+}
+.Info .third .t1{
+    flex: 2;
+    text-align: left;
+    padding-left: 0.1rem;
+}
+.Info .third .t2{
+    flex: 2;
+}
+.Info .third .t3{
+    flex: 6;
+    text-align: right;
+    padding-right: 0.1rem;
+}
+.Info .third .t3 span{
+    color: red;
+    margin-left: 0.1rem;
+}
+.Info div #count{
+    height: 0.6rem;
+    margin-top: 0.2rem;
+    margin-left: 0.2rem;
+    outline: none;
+}
+/*底部*/
+.footer{
+    width: 100%;
+    height: 1.2rem;
+    box-sizing: border-box;
+}
+.footer .tips{
+    width: 100%;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    font-size: 0.24rem;
+    background-color: rgba(255, 238, 170, 1);
+    text-align: center;
+}
+.payMoney{
+    display: flex;
+    height: 0.8rem;
+    flex-direction: row;
+}
+.payMoney .money{
+    flex: 7;
+    background-color: #fff;
+    text-align: center;
+    line-height: 0.8rem;
+    font-size: 0.28rem;
+}
+.payMoney .money span{
+    color: red;
+}
+.payMoney .submitOrder{
+    flex: 3;
+    background-color: rgba(255, 234, 0, 1);
+    font-size: 0.28rem;
+    line-height: 0.8rem;
+    text-align: center;
+}
+.payWindow{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+/*遮罩层*/
+.mask{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(1, 1, 1, 0.8);
+    opacity: 0.9;
+}
+.payBox{
+    /*position: absolute;*/
+    /*left: 2rem;*/
+    /*top: 2rem;*/
+    margin: 2rem auto;
+    width: 90%;
+    height: 5rem;
+    z-index:999;
+    background-color: #fff;
+}
+.payBox #payTips{
+    width: 100%;
+    height: 1.5rem;
+    font-size: 0.36rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    border-bottom: 1px solid #000000;
+}
+.payBox #payMoney{
+    width: 100%;
+    height: 2.5rem;
+    font-size: 0.65rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.payBox .inputPass{
+    width: 100%;
+    height: 1rem;
+    display: flex;
+    /*justify-content: space-between;*/
+    justify-content: center;
+}
+.payBox .inputPass input{
+    flex: 1;
+    width: 1rem;
+    height: 1rem;
+    outline: none;
+    border: 1px solid #ccc;
+    font-size: 0.66rem;
+    text-align: center;
+    font-weight: 700;
+ }
+
+.paySuccess {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+}
+.successMask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(1, 1, 1, 0.8);
+    opacity: 0.9;
+}
+.successTips {
+    position: absolute;
+    left: 1.2rem;
+    width: 5rem;
+    height: 3.3rem;
+    border: 1px solid #ddd;
+    margin: 3.5rem auto;
+    background-color: #fff;
+}
+.successTips .img {
+    width: 1rem;
+    height: 1rem;
+    margin: 0 auto;
+}
+.successTips .img  img {
+    width: 100%;
+    height: 100%;
+}
+.successTips p {
+    font-size: 0.38rem;
+    text-align: center;
+    margin-top: 0.4rem;
+    margin-left: 0.2rem;
+}
+.successTips a {
+    display: block;
+    width: 2rem;
+    height: 0.8rem;
+    text-align: center;
+    font-size: 0.46rem;
+    background-color: rgba(255, 234, 0, 1);
+    color: #000;
+    margin: 0.3rem auto;
+    border-radius: 10px;
+}
+

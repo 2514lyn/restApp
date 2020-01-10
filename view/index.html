@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>index</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div class="index-wrapper">
+    <!--    头部-->
+    <div class="header">甄好吃麻辣烫
+    <button class="iconfontPer"></button>
+    </div>
+    <!--    内容-->
+    <div class="content">
+        <!--        轮播图  商家海报-->
+        <div id="slider"></div>
+        <!--        点菜+商家-->
+        <div class="bar">
+            <ul class="bar-list">
+                <li><a href="index.html">点菜</a></li>
+                <li><a href="restinfo.html">商家</a></li>
+            </ul>
+        </div>
+        <div class="meal">
+            <!--        左侧导航栏-->
+            <div class="leftBar">
+                <ul class="leftBar-list">
+                    <li><a href="">人气套餐</a></li>
+                    <li><a href="">特色汤底</a></li>
+                    <li><a href="">口味</a></li>
+                    <li><a href="">无肉不欢</a></li>
+                    <li><a href="">丸来丸去</a></li>
+                    <li><a href="">精致素食</a></li>
+                    <li><a href="">主食小吃</a></li>
+                    <li><a href="">酒水饮料</a></li>
+                </ul>
+            </div>
+<!--            右侧具体菜品-->
+            <div class="rightItem">
+                <ul class="right-list">
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer">
+        <div class="car">
+            <span class="dot">0</span>
+            <span class="iconfont">&#xe600;</span>
+        </div>
+        <div class="foot-text">
+            <p class="sumMoney">￥0</p>
+            <a  class="goToMoney">去结算</a>
+        </div>
+    </div>
+    <div class="carList">
+        <div class="mask">
+            <div class="caritem">
+                <ul class="carMealList">
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./js/jquery-3.3.1.js"></script>
+<script src="./js/zepto.min.js"></script>
+<script src="./js/rem.js"></script>
+<script src="./js/swiper.js"></script>
+<script src="./js/data.js"></script>
+<script src="js/event.js"></script>
+<script>
+    //首页轮播图
+    $('#slider').swiper({
+        imgList: ['./img/p1.jpg','./img/p2.jpg','./img/p3.jpg'],
+        animateType: 'animate',
+        changeBtn: true,
+        showPointBtn: true,
+        isAuto: true,
+        imgHeight: '3rem'
+    })
+</script>
+</body>
+</html>
